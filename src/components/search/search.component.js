@@ -8,6 +8,11 @@ export default function SearchComponent() {
     const [value, setValue] = React.useState('');
     const {setCharSearch} = useContext(BookstarsContext);
 
+    useEffect(() => {
+        if (value === '') {
+            setCharSearch([]);
+        }
+    }, [value])
     return (
         <Autocomplete
             // disablePortal
@@ -24,12 +29,12 @@ export default function SearchComponent() {
         }}
             value={value}
             onInputChange={(event, newInputValue, reason) => {
-                if (reason === 'reset') {
+                if (reason === 'clear') {
                     setValue('')
                     setCharSearch('');
 
                 } else {
-                    setValue(newInputValue)
+                    setValue('')
                     setCharSearch('');
                 }
             }}

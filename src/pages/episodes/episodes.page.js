@@ -52,7 +52,7 @@ const Episodes = ({data}) => {
     useEffect (() => {
         if (characterSearch === null || characterSearch === undefined) return;
         setFilteredEpisodes(characterSearch.episodes);
-    }, [characterSearch, filteredEpisodes]);
+    }, [characterSearch, filteredEpisodes,  setCharSearch]);
 
     const dataToDisplay = (filteredEpisodes && filteredEpisodes) ? filteredEpisodes : data;
 

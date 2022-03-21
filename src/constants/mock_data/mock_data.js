@@ -22,6 +22,7 @@ export const BookStars_Mock_Data = [
                         ],
                         releaseDate: 'Mon Mar 21 2022',
 
+                        episodeCount: 4,
                         episodeComments: [
                             {
                                 comment: 'lorem ipsum',
@@ -51,6 +52,7 @@ export const BookStars_Mock_Data = [
                         episodeCode: 'P02',
                         characters: [1,2],
                         releaseDate: 'Mon Mar 21 2022',
+                        episodeCount: 4,
 
                         episodeComments: [
                             {

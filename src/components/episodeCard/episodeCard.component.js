@@ -94,7 +94,7 @@ const EpisodeCard = ({details}) => {
     const classes = useStyles();
 
 
-    const {id, name, episodeCode, releaseDate, episodeCount, episodeComments} = details;
+    const {id, name, episodeCode, releaseDate, episodeCount} = details;
     const [isOpen, setOpen] = useState(false);
 
     const openComments = () => {
