@@ -73,12 +73,12 @@ export default function SearchComponent() {
                     if (option.inputValue) {
                         return option.inputValue;
                     }
-                    return option.user.firstname + ' ' +option.user.lastname;
+                    return option.firstname + ' ' +option.lastname;
                 }}
                 selectOnFocus
                 clearOnBlur
                 handleHomeEndKeys
-                renderOption={(props, option) => <li {...props}>{option.user.firstname}</li>}
+                renderOption={(props, option) => <li {...props}>{option.firstname}</li>}
                 sx={{ width: 300 }}
                 freeSolo
                 renderInput={(params) => <TextField {...params} label="Search Character" />}

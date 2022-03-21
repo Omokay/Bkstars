@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react';
 export const BookstarsContext = createContext(null);
 
 const BookstarsContextProvider = ({ children }) => {
-    const [characterSearch, setCharSearch] = useState('');
+    const [characterSearch, setCharSearch] = useState({});
     const [filteredEpisodes, setFilteredEpisodes] = useState([]);
 
 

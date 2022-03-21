@@ -92,6 +92,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 
 const CharactersTable = ({characters}) => {
+    console.log(characters);
     const classes = useStyles();
 
     // const openEpisodes = () => {
@@ -116,29 +117,28 @@ const CharactersTable = ({characters}) => {
                 <TableBody>
                     {
                         characters.map((row, index) => {
-                            console.log(row.user.firstname);
                             return (
                                 (
                                     <TableRow key={index}>
                                         <StyledTableCell align="left">&nbsp;&nbsp;&nbsp;&nbsp;</StyledTableCell>
-                                        <StyledTableCell align="left">{row.user.firstname}</StyledTableCell>
-                                        <StyledTableCell align="left">{row.user.lastname}</StyledTableCell>
-                                        <StyledTableCell align="left">{row.user.status}</StyledTableCell>
+                                        <StyledTableCell align="left">{row.firstname}</StyledTableCell>
+                                        <StyledTableCell align="left">{row.lastname}</StyledTableCell>
+                                        <StyledTableCell align="left">{row.status}</StyledTableCell>
 
                                         <StyledTableCell align="left">
                                             <div
                                                 style={{
-                                                    backgroundColor: (row.user.gender === 'Male') ? 'rgba(91, 147, 255, 0.1)' : 'rgba(255, 143, 107, 0.1)',
-                                                    color: (row.user.gender === 'Male') ? 'rgba(91, 147, 255, 1)' : 'rgba(255, 143, 107, 1)',
+                                                    backgroundColor: (row.gender === 'Male') ? 'rgba(91, 147, 255, 0.1)' : 'rgba(255, 143, 107, 0.1)',
+                                                    color: (row.gender === 'Male') ? 'rgba(91, 147, 255, 1)' : 'rgba(255, 143, 107, 1)',
 
 
                                                 }}
                                                 className={classes.genderColumn}>
-                                                {row.user.gender}
+                                                {row.gender}
                                             </div>
                                         </StyledTableCell>
-                                        <StyledTableCell align="left">{row.user.stateOfOrigin}</StyledTableCell>
-                                        <StyledTableCell align="left">{row.user.location.name}</StyledTableCell>
+                                        <StyledTableCell align="left">{row.stateOfOrigin}</StyledTableCell>
+                                        <StyledTableCell align="left">{row.location.name}</StyledTableCell>
                                     </TableRow>
 
 

@@ -48,15 +48,14 @@ const Episodes = ({data}) => {
         filteredEpisodes, setFilteredEpisodes
     } = useContext(BookstarsContext);
 
+    // Get Search object from search input and pass values to filtered array of episodes
     useEffect (() => {
-        const {user} = characterSearch;
-        console.log(user);
+        console.log(characterSearch.episodes);
+        setFilteredEpisodes(characterSearch.episodes);
+        console.log(characterSearch);
+    }, [characterSearch]);
 
-
-        // setFilteredEpisodes(episodes);
-    }, [characterSearch, setCharSearch]);
-
-    const dataToDisplay = (filteredEpisodes.length && data.length) ? data : data;
+    const dataToDisplay = (characterSearch.length) ? filteredEpisodes : data;
 
     return (
         <div className={classes.wrapper}>

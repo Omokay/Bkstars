@@ -1,6 +1,5 @@
 export const BookStars_Mock_Data = [
     {
-        user: {
             id: 1,
             firstname: 'Omoke',
             lastname: 'Chuku',
@@ -77,13 +76,12 @@ export const BookStars_Mock_Data = [
                         ],
                     }
                 ],
-            created: 'Mon Mar 21 2022',
-            }
+            created: 'Mon Mar 21 2022'
     },
 
 
     {
-        user: {
+
             id: 2,
             firstname: 'Kelechi',
             lastname: 'Star',
@@ -161,7 +159,6 @@ export const BookStars_Mock_Data = [
                 }
             ],
             created: 'Mon Mar 21 2022',
-        }
     }
 ];
 
