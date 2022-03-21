@@ -33,7 +33,7 @@ export default function Navigation(props, children) {
             {/*<Divider />*/}
             <List component="nav"
                   aria-labelledby="nested-list-subheader">
-            <NavLink className={classes.navlink} style={{textDecoration: 'none',}}  to='/' >
+            <NavLink className={classes.navlink} style={{textDecoration: 'none',}}  to='/episodes' >
                 <div className={classes.gradient}/>
                 <ListItem button>
                     <ListItemIcon><div className={classes.nav_dash} /></ListItemIcon>
@@ -152,7 +152,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     navlink: {
-        width: 'inherit',
+        width: '250px',
         height: 'auto',
         textDecoration: 'none',
         color: '#ccc',
@@ -203,19 +203,21 @@ const useStyles = makeStyles((theme) => ({
     iconStyles: {
         color: 'black',
         fontSize: '1.5rem',
-
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
     },
     iconStyles2: {
         width: '18px',
         height: '18px',
         backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
         backgroundImage: `url(${Images.Dash})`,
 
     },
     nav_dash: {
         width: '18px',
         height: '18px',
-        backgroundSize: 'contain',
+        // backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
         backgroundImage: `url(${Images.Dash})`,
         transition: '.5 ease',
@@ -229,7 +231,7 @@ const useStyles = makeStyles((theme) => ({
     nav_users: {
         width: '18px',
         height: '18px',
-        backgroundSize: 'contain',
+        // backgroundSize: 'contain',
         backgroundImage: `url(${Images.Users})`,
         backgroundRepeat: 'no-repeat',
         transition: '.5 ease',

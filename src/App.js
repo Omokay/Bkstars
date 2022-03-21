@@ -15,8 +15,9 @@ function App() {
         <div className="App">
             <Router>
                 <Routes>
-                    <Route path='/' element={<Landing />} />
-                    <Route path='/characters' element={<Characters />} />
+                    <Route exact path='/' element={<Landing />} />
+                    <Route exact path='/episodes' element={<Landing />} />
+                    <Route exact path='/characters' element={<Characters />} />
                 </Routes>
             </Router>
         </div>
