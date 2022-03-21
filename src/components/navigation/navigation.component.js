@@ -33,7 +33,7 @@ export default function Navigation(props, children) {
             {/*<Divider />*/}
             <List component="nav"
                   aria-labelledby="nested-list-subheader">
-            <NavLink className={classes.navlink} style={{textDecoration: 'none',}}  to='/episodes' >
+            <NavLink className={classes.navlink} style={{textDecoration: 'none',}}  to='/' >
                 <div className={classes.gradient}/>
                 <ListItem button>
                     <ListItemIcon><div className={classes.nav_dash} /></ListItemIcon>
@@ -198,20 +198,6 @@ const useStyles = makeStyles((theme) => ({
         textTransform: 'uppercase',
         transition: '0.5s ease',
 
-
-    },
-    iconStyles: {
-        color: 'black',
-        fontSize: '1.5rem',
-        backgroundSize: 'contain',
-        backgroundRepeat: 'no-repeat',
-    },
-    iconStyles2: {
-        width: '18px',
-        height: '18px',
-        backgroundSize: 'contain',
-        backgroundRepeat: 'no-repeat',
-        backgroundImage: `url(${Images.Dash})`,
 
     },
     nav_dash: {
