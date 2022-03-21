@@ -8,14 +8,11 @@ export default function SearchComponent() {
     const [value, setValue] = React.useState('');
     const {setCharSearch} = useContext(BookstarsContext);
 
-    useEffect(() => {
-        if (value === '') {
-            setCharSearch([]);
-        }
-    }, [value])
+
     return (
         <Autocomplete
             // disablePortal
+            disableClearable
             id="combo-box-demo"
             options={BookStars_Mock_Data}
             getOptionLabel={(option) => {
@@ -29,7 +26,7 @@ export default function SearchComponent() {
         }}
             value={value}
             onInputChange={(event, newInputValue, reason) => {
-                if (reason === 'clear') {
+                if (reason) {
                     setValue('')
                     setCharSearch('');
 

@@ -105,6 +105,7 @@ export const BookStars_Mock_Data = [
                         1,2,3,4
                     ],
                     releaseDate: 'Mon Mar 21 2022',
+                    episodeCount: 3,
 
                     episodeComments: [
                         {
@@ -122,11 +123,7 @@ export const BookStars_Mock_Data = [
                             ipAddressLocation: '',
                             created: 'Mon Mar 21 2022',
                         },
-                        {
-                            comment: 'lorem ipsum',
-                            ipAddressLocation: '',
-                            created: 'Mon Mar 21 2022',
-                        },
+
                     ],
                 },
                 {
@@ -136,27 +133,14 @@ export const BookStars_Mock_Data = [
                     characters: [1,2],
                     releaseDate: 'Mon Mar 21 2022',
 
+                    episodeCount: 1,
                     episodeComments: [
                         {
                             comment: 'lorem ipsum',
                             ipAddressLocation: '',
                             created: 'Mon Mar 21 2022',
                         },
-                        {
-                            comment: 'lorem ipsum',
-                            ipAddressLocation: '',
-                            created: 'Mon Mar 21 2022',
-                        },
-                        {
-                            comment: 'lorem ipsum',
-                            ipAddressLocation: '',
-                            created: 'Mon Mar 21 2022',
-                        },
-                        {
-                            comment: 'lorem ipsum',
-                            ipAddressLocation: '',
-                            created: 'Mon Mar 21 2022',
-                        },
+
                     ],
                 }
             ],
