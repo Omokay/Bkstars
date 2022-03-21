@@ -20,6 +20,11 @@ const useStyles =  makeStyles((theme) => ({
         justifyContent: 'space-between',
         alignItems: 'center',
         maxWidth: '916px',
+
+        [theme.breakpoints.down('sm')]: {
+            display: 'flex',
+            flexDirection: 'column',
+        },
     },
     headerText: {
         fontWeight: '700',
@@ -36,6 +41,12 @@ const useStyles =  makeStyles((theme) => ({
         padding: 0,
 
     },
+    searchComponent: {
+        // [theme.breakpoints.down('xs')]: {
+        //     display: 'none',
+        // },
+    },
+
 
 }));
 
@@ -63,7 +74,7 @@ const Episodes = ({data}) => {
                 <h2 className={classes.headerText}>
                     Episodes
                 </h2>
-                <div>
+                <div className={classes.searchComponent}>
                     <SearchComponent/>
                 </div>
             </div>

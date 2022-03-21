@@ -11,6 +11,10 @@ import Toolbar from '@mui/material/Toolbar';
 import {makeStyles} from "@mui/styles";
 import {NavLink} from "react-router-dom";
 import {Images} from "../../constants/index.constant";
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+
+
 
 const drawerWidth = 280;
 
@@ -60,7 +64,20 @@ export default function Navigation(props, children) {
                     width: { sm: `calc(100% - ${drawerWidth}px)` },
                     ml: { sm: `${drawerWidth}px` },
                 }}
+
             >
+                <Toolbar>
+                    <IconButton
+                        color="inherit"
+                        aria-label="open drawer"
+                        edge="start"
+                        onClick={handleDrawerToggle}
+                        className={classes.menuButton}
+                    >
+                        {/* Should hold the  nav brand */}
+                        <MenuIcon />
+                    </IconButton>
+                </Toolbar>
             {/*     Insert Name and date filter here */}
             </AppBar>
             <Box
