@@ -50,13 +50,13 @@ const Episodes = ({data}) => {
 
     // Get Search object from search input and pass values to filtered array of episodes
     useEffect (() => {
-        console.log(characterSearch.episodes);
+        if (characterSearch === null || characterSearch === undefined) return;
         setFilteredEpisodes(characterSearch.episodes);
-        console.log(characterSearch);
-    }, [characterSearch]);
+    }, [characterSearch, filteredEpisodes]);
 
-    const dataToDisplay = (characterSearch.length) ? filteredEpisodes : data;
+    const dataToDisplay = (filteredEpisodes && filteredEpisodes) ? filteredEpisodes : data;
 
+    console.log(dataToDisplay);
     return (
         <div className={classes.wrapper}>
             <div className={classes.header}>

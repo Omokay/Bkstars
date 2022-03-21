@@ -129,7 +129,7 @@ const useStyles = makeStyles((theme) => ({
     content: {
         width: '100%',
         minHeight: '100vh',
-        height: 'auto',
+        height: '100%',
         padding: '0',
         background: '#EFEFEF',
 
