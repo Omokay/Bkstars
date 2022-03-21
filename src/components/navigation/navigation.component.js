@@ -16,7 +16,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 
 
-const drawerWidth = 280;
+const drawerWidth = 270;
 
 export default function Navigation(props, children) {
     const classes = useStyles();
@@ -216,10 +216,14 @@ const useStyles = makeStyles((theme) => ({
         width: '18px',
         height: '18px',
         backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
         backgroundImage: `url(${Images.Dash})`,
+        transition: '.5 ease',
 
         '&:hover': {
             backgroundImage: `url(${Images.DashActive})`,
+            backgroundRepeat: 'no-repeat',
+
         }
     },
     nav_users: {
@@ -227,9 +231,13 @@ const useStyles = makeStyles((theme) => ({
         height: '18px',
         backgroundSize: 'contain',
         backgroundImage: `url(${Images.Users})`,
+        backgroundRepeat: 'no-repeat',
+        transition: '.5 ease',
 
         '&:hover': {
             backgroundImage: `url(${Images.Users_Active})`,
+            backgroundRepeat: 'no-repeat',
+
         }
     },
 }));
