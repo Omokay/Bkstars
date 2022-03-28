@@ -33,7 +33,7 @@ export default function Navigation(props, children) {
             {/*<Divider />*/}
             <List component="nav"
                   aria-labelledby="nested-list-subheader">
-            <NavLink className={classes.navlink} style={{textDecoration: 'none',}}  to='/' >
+            <NavLink className={classes.navlink} style={{textDecoration: 'none',}}  to='/episodes' >
                 <div className={classes.gradient}/>
                 <ListItem button>
                     <ListItemIcon><div className={classes.nav_dash} /></ListItemIcon>
@@ -128,10 +128,6 @@ const useStyles = makeStyles((theme) => ({
 
     root: {
         display: 'flex',
-
-        // MuiListItemIconRoot :{
-        //
-        // },
         a: {
             textDecoration: 'none',
         },
@@ -159,7 +155,6 @@ const useStyles = makeStyles((theme) => ({
         transition: '0.5s ease',
 
         '&:hover': {
-            // backgroundImage: 'linear-gradient(to right, #D93837 , #ffffff)',
             '& $navText': {
                 color: '#FFC947',
                 fontSize: '20px',
@@ -206,8 +201,6 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
         backgroundImage: `url(${Images.Dash})`,
-        transition: '.5 ease',
-        //
     },
     nav_users: {
         width: '18px',
@@ -215,13 +208,6 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: 'contain',
         backgroundImage: `url(${Images.Users})`,
         backgroundRepeat: 'no-repeat',
-        transition: '.5 ease',
-
-        // '&:hover': {
-        //     backgroundImage: `url(${Images.Users_Active})`,
-        //     backgroundRepeat: 'no-repeat',
-        //
-        // }
     },
 }));
 
