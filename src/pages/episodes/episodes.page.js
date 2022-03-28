@@ -53,12 +53,10 @@ const useStyles =  makeStyles((theme) => ({
 
 const Episodes = ({data}) => {
     const classes = useStyles();
-
     const {
         characterSearch, setCharSearch,
         filteredEpisodes, setFilteredEpisodes
     } = useContext(BookstarsContext);
-
     // Get Search object from search input and pass values to filtered array of episodes
     useEffect (() => {
         if (characterSearch === null || characterSearch === undefined) return;
@@ -67,7 +65,7 @@ const Episodes = ({data}) => {
 
     const dataToDisplay = (filteredEpisodes && filteredEpisodes) ? filteredEpisodes : data;
 
-    console.log(dataToDisplay);
+    // console.log(dataToDisplay);
     return (
         <div className={classes.wrapper}>
             <div className={classes.header}>

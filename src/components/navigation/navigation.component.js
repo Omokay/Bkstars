@@ -203,30 +203,25 @@ const useStyles = makeStyles((theme) => ({
     nav_dash: {
         width: '18px',
         height: '18px',
-        // backgroundSize: 'contain',
+        backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
         backgroundImage: `url(${Images.Dash})`,
         transition: '.5 ease',
-
-        '&:hover': {
-            backgroundImage: `url(${Images.DashActive})`,
-            backgroundRepeat: 'no-repeat',
-
-        }
+        //
     },
     nav_users: {
         width: '18px',
         height: '18px',
-        // backgroundSize: 'contain',
+        backgroundSize: 'contain',
         backgroundImage: `url(${Images.Users})`,
         backgroundRepeat: 'no-repeat',
         transition: '.5 ease',
 
-        '&:hover': {
-            backgroundImage: `url(${Images.Users_Active})`,
-            backgroundRepeat: 'no-repeat',
-
-        }
+        // '&:hover': {
+        //     backgroundImage: `url(${Images.Users_Active})`,
+        //     backgroundRepeat: 'no-repeat',
+        //
+        // }
     },
 }));
 
