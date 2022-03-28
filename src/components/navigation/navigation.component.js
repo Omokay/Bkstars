@@ -33,7 +33,7 @@ export default function Navigation(props, children) {
             {/*<Divider />*/}
             <List component="nav"
                   aria-labelledby="nested-list-subheader">
-            <NavLink className={classes.navlink} style={{textDecoration: 'none',}}  to='/episodes' >
+            <NavLink className={classes.navlink} style={{textDecoration: 'none',}}  to='/' >
                 <div className={classes.gradient}/>
                 <ListItem button>
                     <ListItemIcon><div className={classes.nav_dash} /></ListItemIcon>
